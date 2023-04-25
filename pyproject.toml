@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "synology-docker-poc"
+version = "0.1.0"
+description = ""
+authors = ["Erik Nelson <erik@nsk.io>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "sdp"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+docker = "^6.0.1"
+loguru = "^0.7.0"
+click = "^8.1.3"
+
+[tool.poetry.scripts]
+sdp = "sdp.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
