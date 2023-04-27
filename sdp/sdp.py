@@ -1,12 +1,9 @@
 import click
 from loguru import logger
-from sdp.hello import hello
 
 @click.command
 def run():
-    logger.debug('cli.run')
-    hello()
+    logger.info('Hello world, this is sdp.')
 
 def main():
     run()
-
